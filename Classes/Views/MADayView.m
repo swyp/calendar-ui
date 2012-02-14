@@ -184,19 +184,19 @@ static const unsigned int TOP_BACKGROUND_HEIGHT          = 35;
 }
 
 - (void)layoutSubviews {
-	self.topBackground.frame = CGRectMake(CGRectGetMinX(self.bounds),
-										  CGRectGetMinY(self.bounds),
-										  CGRectGetWidth(self.bounds), TOP_BACKGROUND_HEIGHT + 10);
-	self.leftArrow.frame = CGRectMake(CGRectGetMinX(self.topBackground.bounds),
-									  (int) (CGRectGetHeight(self.topBackground.bounds) - ARROW_HEIGHT) / 2,
-									  ARROW_WIDTH, ARROW_HEIGHT);
-	self.rightArrow.frame = CGRectMake(CGRectGetWidth(self.topBackground.bounds) - ARROW_WIDTH,
-									   (int) (CGRectGetHeight(self.topBackground.bounds) - ARROW_HEIGHT) / 2,
-									   ARROW_WIDTH, ARROW_HEIGHT);
-	self.dateLabel.frame = CGRectMake(CGRectGetMaxX(self.leftArrow.bounds),
-									  (int) (CGRectGetHeight(self.topBackground.bounds) - ARROW_HEIGHT) / 2,
-									  CGRectGetWidth(self.topBackground.bounds) - CGRectGetWidth(self.leftArrow.bounds) - CGRectGetWidth(self.rightArrow.bounds),
-									  ARROW_HEIGHT);
+//	self.topBackground.frame = CGRectMake(CGRectGetMinX(self.bounds),
+//										  CGRectGetMinY(self.bounds),
+//										  CGRectGetWidth(self.bounds), TOP_BACKGROUND_HEIGHT + 10);
+//	self.leftArrow.frame = CGRectMake(CGRectGetMinX(self.topBackground.bounds),
+//									  (int) (CGRectGetHeight(self.topBackground.bounds) - ARROW_HEIGHT) / 2,
+//									  ARROW_WIDTH, ARROW_HEIGHT);
+//	self.rightArrow.frame = CGRectMake(CGRectGetWidth(self.topBackground.bounds) - ARROW_WIDTH,
+//									   (int) (CGRectGetHeight(self.topBackground.bounds) - ARROW_HEIGHT) / 2,
+//									   ARROW_WIDTH, ARROW_HEIGHT);
+//	self.dateLabel.frame = CGRectMake(CGRectGetMaxX(self.leftArrow.bounds),
+//									  (int) (CGRectGetHeight(self.topBackground.bounds) - ARROW_HEIGHT) / 2,
+//									  CGRectGetWidth(self.topBackground.bounds) - CGRectGetWidth(self.leftArrow.bounds) - CGRectGetWidth(self.rightArrow.bounds),
+//									  ARROW_HEIGHT);
 	
 	self.allDayGridView.frame = CGRectMake(0, 0, // Top left corner of the scroll view
 										   CGRectGetWidth(self.bounds),
